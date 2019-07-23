@@ -10,11 +10,11 @@ class Factorial
 end
 
 describe Factorial do
-    # let! vs. let => bang ensures that object is created BEFORE any tests run
-    let!(:calculator) { Factorial.new }
+    # # let! vs. let => bang ensures that object is created BEFORE any tests run
+    # let!(:calculator) { Factorial.new }
 
 
     it "finds the factorial of 5" do
-        expect(calculator.factorial_of(5)).to eq(120)
+        expect(subject.factorial_of(5)).to eq(120)
     end
 end
