@@ -10,7 +10,8 @@ class Factorial
 end
 
 describe Factorial do
-    let(:calculator) { Factorial.new }
+    # let! vs. let => bang ensures that object is created BEFORE any tests run
+    let!(:calculator) { Factorial.new }
 
 
     it "finds the factorial of 5" do
