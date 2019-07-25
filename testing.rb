@@ -26,7 +26,17 @@ class TicTacToe
     attr_accessor :score
 
     def initialize
-        @score = {}
+        @score = {
+            1 => "",
+            2 => "",
+            3 => "",
+            4 => "",
+            5 => "",
+            6 => "",
+            7 => "",
+            8 => "",
+            9 => ""
+        }
     end
 
 end
@@ -41,7 +51,7 @@ describe TicTacToe do
     end
 
     it "has nine cells in the score-keeper" do
-
+        expect(subject.score.keys.count).to eq(9)
     end
 
     it "can only keep 'X' or 'O' in the score-keeper" do
