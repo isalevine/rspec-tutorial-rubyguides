@@ -23,14 +23,21 @@ end
 
 
 class TicTacToe
+    attr_accessor :score
+
+    def initialize
+        @score = {}
+    end
+
 end
 
 
 describe TicTacToe do
+    # let!(:game) { TicTacToe.new }
 
 
     it "has a hash for a score-keeper" do
-
+        expect(subject.score).to be_a_kind_of(Hash)
     end
 
     it "has nine cells in the score-keeper" do
