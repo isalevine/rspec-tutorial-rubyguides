@@ -18,3 +18,27 @@ describe Factorial do
         expect(subject.factorial_of(5)).to eq(120)
     end
 end
+
+
+
+
+class TicTacToe
+end
+
+
+describe TicTacToe do
+
+
+    it "has a hash for a score-keeper" do
+
+    end
+
+    it "has nine cells in the score-keeper" do
+
+    end
+
+    it "can only keep 'X' or 'O' in the score-keeper" do
+
+    end
+
+end
